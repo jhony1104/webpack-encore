@@ -1732,10 +1732,11 @@ class Encore {
      *
      * https://github.com/sveltejs/svelte-loader
      *
+     * @param {object} options
      * @returns {Encore}
      */
-    enableSvelte() {
-        webpackConfig.enableSvelte();
+    enableSvelte(options = {}) {
+        webpackConfig.enableSvelte(options);
 
         return this;
     }
